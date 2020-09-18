@@ -1,0 +1,81 @@
+open-timestamp: 1597636800000
+server-alias:
+  - Survival:S
+  - Creative:C
+enable-globalchat: true
+globalchat-message: |
+  [
+    "",
+    {"text": "[%serverAlias%]", "color":"yellow",
+      "hoverEvent":{"action": "show_text", "contents": {"translate":"selectServer.select"}},
+      "clickEvent": {"action": "run_command", "value": "/server %serverName%"}},
+    {"translate": "chat.type.text","with": ["%displayName%", "%message%"]}
+  ]
+enable-joinmotd: true
+joinmotd:
+- |
+  [
+    {"text": "============"},
+    {"text": "Welcome to "},
+    {"text": "DGBCraft","color": "gold"},
+    {"text": "============"}
+  ]
+- |
+  [
+    {"text": "  "},
+    {"text": "Season 3", "color": "aqua"},
+    {"text": " | "},
+    {"text": "Day %day%", "color": "gold"}
+  ]
+- |
+  [
+    {"text": " "},
+    {"text": "特殊命令列表:", "bold": true}
+  ]
+- |
+  [
+    {"text": "  "},
+    {"text": "/cam", "color": "yellow",
+      "hoverEvent":{"action": "show_text", "contents": "快速切换生存/旁观模式"},
+      "clickEvent": {"action": "run_command", "value": "/cam"}
+    },
+    {"text": ": "},
+    {"text": "快速切换生存/旁观模式", "italic": true}
+  ]
+- |
+  [
+    {"text": "  "},
+    {"text": "/here", "color": "yellow",
+      "hoverEvent":{"action": "show_text", "contents": "发送位置并高亮自身"},
+      "clickEvent": {"action": "run_command", "value": "/here"}
+    },
+    {"text": ": "},
+    {"text": "发送当前位置，并高亮自身10s", "italic": true}
+  ]
+- |
+  [
+    {"text": "  "},
+    {"text": "/score", "color": "yellow",
+      "hoverEvent":{"action": "show_text", "contents": "显示/隐藏记分板"},
+      "clickEvent": {"action": "run_command", "value": "/score"}
+    },
+    {"text": ": "},
+    {"text": "显示/隐藏右侧记分板", "italic": true}
+  ]
+- |
+  [
+    {"text": "  "},
+    {"text": "/server", "color": "yellow"},
+    {"text": ": "},
+    {"text": "跳转服务器 ", "italic": true},
+    {"text": "[Survival]", "color": "yellow",
+      "hoverEvent":{"action": "show_text", "contents": "切换至生存服"},
+      "clickEvent": {"action": "run_command", "value": "/server survival"}
+    },
+    {"text": " "},
+    {"text": "[Creative]", "color": "yellow",
+      "hoverEvent":{"action": "show_text", "contents": "切换至创造服"},
+      "clickEvent": {"action": "run_command", "value": "/server creative"}
+    }
+  ]
+- =========================================
