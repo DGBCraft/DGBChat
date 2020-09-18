@@ -1,0 +1,10 @@
+open-timestamp: 0
+server-alias:
+  - lobby:hub
+enable-global-chat: true
+global-chat-format: [%serverAlias%]<%name%> %message%
+enable-joinmotd: true
+joinmotd:
+  - Welcome, %playerName%!
+  - Today is the day %day% when the server is open!
+
