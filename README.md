@@ -10,6 +10,7 @@
 
 ## Config
 [Example](example/config.yml): DGBCraft's config.yml
+*The plugin does not contain commands in the configuration file*
 - `open-timestamp`: Timestamp when the server was first opened, used to calculate `%day%`
 - `server-alias`: List of server aliases
 - `enable-global-chat`: If enabled, Chat information on the server will be forwarded to other servers
